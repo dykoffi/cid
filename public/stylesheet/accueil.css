@@ -1,3 +1,6 @@
+@import url("components/newcard.css");
+@import url("components/projetcard.css");
+
 :root- {
     --prim: rgb(36, 36, 36);
 }
@@ -8,10 +11,14 @@
 
 #baniere {
     background-color: #2c2e43 !important;
+    background-image: url("/images/cid.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vmin;
-    z-index: 4
+    z-index: 4;
+    background-blend-mode: difference;
 }
+
 .navbar-brand img{
     height: 1cm;
     background-color: #2c2e43;
@@ -38,7 +45,6 @@
     background-blend-mode: multiply;
 }
 #voirClubs {
-    background-color: #2c2e43 !important;
     color: white !important;
     background-size: 100vmax;
     background-repeat: no-repeat;

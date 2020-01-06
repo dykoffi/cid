@@ -83,6 +83,7 @@ function onListening() {
     debug('Listening on ' + bind);
 }
 
+console.log("start on port : " + port)
 var io = require("socket.io").listen(server)
 io.sockets.on("connection", function (socket, pseudo) {
     socket.on('newReq', (infoPersonnel, infoProjet) => {

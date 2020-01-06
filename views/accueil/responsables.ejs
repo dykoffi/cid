@@ -1,24 +1,17 @@
 <div class="col-lg-12 col-md-12 information p-5" id="responsables">
     <div class="row">
         <div class="col-12">
-            <h4 class="blue-grey-text mb-3 text-center" id="titre">Les
-                responsables</h4>
+                <h3 class="col-12 mb-4 lead gauche"> <i class="text-info fa-2x">R</i>esponsables</h3>
             <div class="col-12 ">
-                <div class="row d-flex align-items-center justify-content-center text-darken-1">
-                    <% info.forEach((i)=>{ %>
-                    <div class="col-lg-3 col-md-4 mb-4 text-center monter">
-                        <div class="card border-0">
-                            <div class="row  d-flex justify-content-center">
-                                    <img class="card-img-top" src="/images/<%= i.photo %>" alt="">
-                            </div>
-                            
-                            <div class="card-body">
-                                <h6 class="mt-3 font-weight-bold"><%= i.nom %></h6>
-                                <p class="card-text">(<small
-                                        title="Direction de la Recherche et de l'Innovation Technologique"><%= i.responsabilite %></small>)
-                                </p>
-                            </div>
-                        </div>
+                <div
+                    class="row d-flex align-items-center text-darken-1">
+                    <% profs.forEach((p)=>{ %>
+                    <div class="col-lg-2 col-md-4 mb-4 text-center descendre">
+                        <%- include("../components/newcard",{
+                                image : p.photo,
+                                details : p.responsabilite,
+                                titre : p.nom
+                                }) -%>
                     </div>
                     <% }) %>
                 </div>

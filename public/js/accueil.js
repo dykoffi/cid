@@ -7,36 +7,38 @@ $(document).ready(()=>{
     })
 
 })
-ScrollReveal().reveal('.card',{
-    'delay': 700,
-    // 'reset' :true,
-    'duration': 1000,
-    'distance': '70px',
-})
-ScrollReveal().reveal('.details p, .bar',{
-    'delay': 300,
-    // 'reset' :true,
-    'duration': 1000,
-    'distance': '40px',
-    'origin': 'left'
-})
-ScrollReveal().reveal('h3',{
+
+ScrollReveal().reveal('.descendre',{
     'delay': 500,
-    // 'reset' :true,
+    'interval' : 500,
     'duration': 800,
     'distance': '70px',
     'origin': 'top'
 })
+
 ScrollReveal().reveal('.monter',{
     'delay': 200,
-    // 'reset' :true,
+    'interval' : 500,
     'duration': 1000,
+    'origin' : 'bottom',
+    'distance': '100px',
+
 })
 
-ScrollReveal().reveal('.monter2',{
+ScrollReveal().reveal('.gauche',{
     'delay': 200,
+    'interval' : 500,
     'duration': 1000,
-    'origin' : 'bottom'
+    'origin' : 'left',
+    'distance' : "70px"
+})
+
+ScrollReveal().reveal('.droite',{
+    'delay': 200,
+    'interval' : 500,
+    'duration': 1000,
+    'origin' : 'right',
+    'distance' : "70px"
 })
 
 // $(".bouge").paroller({ factor:0.25,  type: 'foreground', direction: 'vertical' })

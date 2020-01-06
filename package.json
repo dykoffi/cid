@@ -1,5 +1,5 @@
 {
-  "name": "CID",
+  "name": "cid",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -16,9 +16,6 @@
     "socket.io": "^2.2.0"
   },
   "main": "app.js",
-  "devDependencies": {
-    "electron": "^7.1.4"
-  },
   "author": "Dy KOFFI",
   "license": "ISC",
   "description": ""
