@@ -1,0 +1,4 @@
+applications:
+- name: cid
+  random-route: true
+  memory: 128M

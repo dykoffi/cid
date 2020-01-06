@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CID | Accueil
+    </title>
+    <%- include ../head -%>
+    <link rel="stylesheet" href="/stylesheet/accueil.css">
+
+</head>
+
+<body class="white">
+    <div id="top"></div>
+    <div id="fond" class="d-flex flex-column justify-content-center align-items-center fond">
+        <div class="navbar-brand bg-dark p-4 mb-4">
+            <img src="/images/logo/logoCidBlanc.png" alt="" class="rot">
+        </div>
+        <div>
+            <h5 class="mont">Chargement ...</h5>
+        </div>
+    </div>
+    <!-- <%- include nav -%> -->
+    <%- include baniere -%>
+    <div class="col-12" id="page">
+        <div class="row">
+            <div class="col-12 white">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+                    <%- include presentation -%>
+                </div>
+            </div>
+            <div class="col-12 bg-light">
+                <%- include responsables -%>
+            </div>
+            <!-- <div class="col-12 grey darken-2 white-text" id="voirPrix">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+                    <%- include prix -%>
+                </div>
+            </div> -->
+            <div class="bg-info bar col-4 offset-1"></div>
+            <div class="col-12 bg-light">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+                    <%- include objectifs -%>
+                </div>
+            </div>
+            <div class="bg-info bar col-4 offset-1"></div>
+            <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+                <%- include startup -%>
+            </div>
+            <div class="bg-info bar col-4 offset-1"></div>
+            <div class="col-12 grey darken-3 white-text" id="voirClubs">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+                    <%- include clubs -%>
+                </div>
+            </div>
+            <div class="bg-info bar col-4 offset-1"></div>
+            <div class="col-12 bg-light">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+                    <%- include projets -%>
+                </div>
+            </div>
+            <div class="bg-info bar col-4 offset-1"></div>
+            <div class="col-12 shadow-lg">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+                    <%- include condition -%>
+                </div>
+
+            </div>
+
+            <div class="col-12">
+                <div class="row">
+                    <%- include footer -%>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <%- include alert -%>
+
+    <%- include ../script -%>
+    <script src="/js/accueil.js"></script>
+</body>
+
+
+</html>
