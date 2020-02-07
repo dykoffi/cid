@@ -1,12 +1,12 @@
 <div class="col-lg-12 col-md-12 information p-5" id="responsables">
     <div class="row">
         <div class="col-12">
-                <h3 class="col-12 mb-4 lead gauche"> <i class="text-info fa-2x">R</i>esponsables</h3>
+                <h3 class="col-12 mb-4 display-4 font-weight-bold droite"> <i class="text-info fa-2x">R</i>esponsables</h3>
             <div class="col-12 ">
                 <div
                     class="row d-flex align-items-center text-darken-1">
                     <% profs.forEach((p)=>{ %>
-                    <div class="col-lg-2 col-md-4 mb-4 text-center descendre">
+                    <div class="col-lg-3 col-md-4 mb-4 text-center descendre">
                         <%- include("../components/newcard",{
                                 image : p.photo,
                                 details : p.responsabilite,

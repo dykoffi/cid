@@ -44,3 +44,34 @@ ScrollReveal().reveal('.droite',{
 // $(".bouge").paroller({ factor:0.25,  type: 'foreground', direction: 'vertical' })
 // $(".bouge2").paroller({ factor:-0.3,  type: 'foreground', direction: 'vertical' })
 // $("h3").paroller({ factor:0.05,  type: 'foreground', direction: 'vertical' })
+$("#baniere").paroller({
+    factor: -0.2,            // multiplier for scrolling speed and offset
+    factorXs: 0.041,           // multiplier for scrolling speed and offset
+    type: 'foreground',     // background, foreground
+    direction: 'vertical', // vertical, horizontal
+    //transition: 'transform 0.2s ease-in' // CSS transition
+});
+
+$(".bar").paroller({
+    factor: -0.2,            // multiplier for scrolling speed and offset
+    factorXs: 0.041,           // multiplier for scrolling speed and offset
+    type: 'foreground',     // background, foreground
+    direction: 'horizontal', // vertical, horizontal
+    //transition: 'transform 0.2s ease-in' // CSS transition
+});
+
+$(".esatic").paroller({
+    factor: 0.1,            // multiplier for scrolling speed and offset
+    //factorXs: 0.041,           // multiplier for scrolling speed and offset
+    type: 'foreground',     // background, foreground
+    direction: 'vertical', // vertical, horizontal
+    //transition: 'transform 0.2s ease-in' // CSS transition
+});
+
+$(".calendrier").paroller({
+    factor: 0.05,            // multiplier for scrolling speed and offset
+    //factorXs: 0.041,           // multiplier for scrolling speed and offset
+    type: 'foreground',     // background, foreground
+    direction: 'horizontal', // vertical, horizontal
+    //transition: 'transform 0.2s ease-in' // CSS transition
+});

@@ -43,7 +43,7 @@ exports.clubs = [
         titre : "Informatique"
     },
     {
-        image : "robotique.jpg",
+        image : "arduinode1.jpeg",
         details : "",
         titre : "Robotique"
     },
