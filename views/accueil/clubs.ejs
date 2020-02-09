@@ -1,37 +1,25 @@
-<div class="col-12 p-5" id="clubs">
+<div class="col-12 p-5 information" id="startup">
+    <i class="mdi-communication-business fa-10x"
+    style="font-size: 500px; transform: rotate(45deg); opacity: 0.1; position: absolute; top: -8.5cm; left: -6cm;"></i>
     <div class="row">
-        <h3 class="col-12 black-text mb-4 display-4 font-weight-bold text-right droite"> <i
-                class="text-info fa-2x">C</i>lubs
-            <div class="row ">
-                <div class="col-lg-12 col-md-12 details pt-3 droite">
-                    <p>
-                        En plus du centre de recherche, l'ESATIC est aussi
-                        animée par ses clubs qui permettent aux jeunes
-                        apprenants de se divertir tout en excellant dans les
-                        domaines des TICs. ces clubs sont tous
-                        independants mais agissent au nom du comité de recherche
-                        de l'ESATIC. Ils organisent des
-                        activités, des cours de formation et biens autres
-                        divertisements afin de permettre aux
-                        etudinats de s'epanouir dans un environnement de
-                        recherche.
-                    </p>
-                </div>
-                <div class="col-md-12 col-lg-12">
-                    <div
-                        class="row d-flex align-items-center justify-content-center">
-                        <% clubs.forEach(c=>{ %>
-                        <div class="col-lg-4 col-md-6 monter">
-                            <%- include("../components/newcard",{
-                                details : c.details,
-                                titre : c.titre,
-                                image : c.image
-                            }) -%>
-                        </div>
-                        <% }) %>
-
-                    </div>
-                </div>
+        <h3 class="col-12 mb-4 font-weight-bold text-secondary droite text-right"> <i class="text-info fa-2x">C</i>lubs</h3>
+        <div class="row">
+            <div class="col-lg-5 offset-lg-1 col-md-7 p-2">
+                <%- include("../components/projetcard",{
+                    projet : "Junior Enterprise",
+                    image : "work.jpeg",
+                    equipe : "Junior Enterprise de l'ESATIC",
+                    details : "",
+                    type : ""
+                }) -%>
             </div>
+            <div class="col-lg-6 col-md-5 details pt-3 gauche">
+                <p class="text-right">
+                    La SIIN est une start-up créée en juillet 2018 qui évolue dans la dématérialisation des produits
+                    d’assurances. Elle a réussi à fédérer tous les assureurs de Côte d’Ivoire à l’idée d’une plateforme
+                    commune à tout le marché des assurances.
+                </p>
+            </div>
+        </div>
     </div>
 </div>

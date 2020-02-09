@@ -1,5 +1,5 @@
 .productCard{
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 
@@ -7,34 +7,10 @@
     min-height: 200px;
     cursor: pointer;
     background-size: cover;
-    border-radius: 15px;
     background-blend-mode: multiply;
 }
 
-.productCard .payIcon{
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60px;
-    min-width: 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.9;
-    transition: all 0.5s ease;
-}
 
-
-.imageProduct:hover .payIcon{
-    transform: translateY(2cm);
-    border-radius: 55px;
-    padding-left: 0.5cm;
-    padding-right: 0.5cm;
-}
-.imageProduct:hover .payIcon::after{
-   content: "Details";
-}
 
 .imageProduct .prix{
     display: flex;
@@ -46,15 +22,10 @@
     background-size: cover;
     background-blend-mode: multiply;
     transition: all 0.8s ease;
-    border-radius: 55px;
     transition: all 0.5s ease;
 
 }
 .imageProduct:hover .prix{
     transform: translateY(-2cm);
     opacity: 0;
-}
-
-.prix .devise{
-    font-size: 10px !important;
 }

@@ -12,10 +12,5 @@ router.get('/', function(req, res, next) {
 
 });
 
-router.get('/inscription/etudiant', function(req, res, next) {
-
-    res.render('inscription/etudiant/index', { title: '<|> | Inscription',logo:"< | >", host: req.hostname});
-
-});
 
 module.exports = router;

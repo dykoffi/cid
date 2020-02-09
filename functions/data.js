@@ -26,13 +26,6 @@ exports.projets = [
         image : "cacao.jpg",
         type : "Agriculture",
         details : ""
-    },
-    {
-        equipe : "Data Jaming",
-        projet : "Data Jaming",
-        image : "reseau.jpg",
-        type : "Education",
-        details : ""
     }
 ]
 
