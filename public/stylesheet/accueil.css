@@ -12,13 +12,24 @@
 }
 #baniere {
     background-color: #22222273 !important;
-    background-image: url("/images/work.jpeg");
+    background-image: url("/images/arduinode1.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
     background-position-y: -7.5cm;
     z-index: 4;
     background-blend-mode: multiply;
+}
+@keyframes backMove{
+    0%{
+        background-position-y: -0cm;
+    }
+    50%{
+        background-position-y: -8cm;
+    }
+    100%{
+        background-position-y: -0cm;
+    }
 }
 
 .fond img{
@@ -98,19 +109,6 @@ h3{
         transform: rotateZ(360deg)
     }
 }
-
-@keyframes backMove{
-    0%{
-        background-position: 0 -5cm;
-    }
-    50%{
-        background-position: -9cm -5cm;
-    }
-    100%{
-        background-position: 0 -5cm;
-    }
-}
-
 .calendrier{
     background-color: rgba(255, 255, 255, 0.623);
     background-image: url("/images/arduinode2.jpeg");
