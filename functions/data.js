@@ -81,7 +81,7 @@ exports.profs = [
     },
     {
         photo : "justine.jpg",
-        nom : "M. KONATE JUSTINE",
-        responsabilite : "Secretaire de Direction de la Cellule d'innovation et de Développement"
+        nom : "Mme. KONATE JUSTINE",
+        responsabilite : "Secretaire de Direction"
     }
 ]

@@ -1,63 +1,14 @@
 .newCard{
     
-    min-height: 250px;
+    /* min-height: 200px; */
     padding: 0.8cm;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.219);
-    
-    background-size: cover;
-    background-blend-mode: multiply;
+    background-color: rgba(255, 255, 255, 0.747);
     transition: all 0.8s ease;
 }
 
-.newCard:hover{
-    background-color: rgba(0, 0, 0, 0.699);
-}
-
-/* newCard titre */
-.newCard .titre{
-    font-weight: bold;
-    color: rgba(240, 248, 255, 0.815);
-    position: absolute;
-    bottom: 0.3cm;
-    left: 0.3cm;
-    transition: all 0.2s ease;
-}
-
-.newCard:hover .titre {
-    transform: translateY(-3cm);
-    color: rgb(24, 171, 240);
-
-}
-
-/* newCard small */
-
-.newCard small{
-    opacity: 0.4;
-    color: rgba(240, 248, 255, 0.815);
-    position: absolute;
-    bottom: 2.3cm;
-    left: 0.3cm;
-}
-
-.newCard:hover small{
-    opacity: 1;
-    transform: translateY(0.8cm);
-
-}
-
-/* newCard info icon */
-
-.newCard i{
-    opacity: 0.4;
-    color: rgba(240, 248, 255, 0.815);
-    position: absolute;
-    top: .3cm;
-    right: .3cm;
-}
-
-.newCard:hover i{
-    opacity: 1;
-    transform: scale(1.3);
-    
+.newCard .image{
+    height: 100px;
+    width: 100px !important;
+    border-radius: 50%;
 }
