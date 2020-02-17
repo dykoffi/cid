@@ -21,7 +21,6 @@ router.get('/', function (req, res, next) {
             }
         }
     }
-
     let profs = {
         selector: {
             _id: {
@@ -29,20 +28,31 @@ router.get('/', function (req, res, next) {
             }
         }
     }
-
-    cid_projets.find(projets).then((projets)=>{
-
-        cid_responsables.find(profs).then((profs)=>{        
-            res.render('accueil/index', { title: 'CID | Accueil', logo: "< | >", projets: projets.docs, clubs: clubs, profs: profs.docs, host: req.hostname });
+    cid_projets.find(projets).then((projets) => {
+        cid_responsables.find(profs).then((profs) => {
+            res.render('accueil/index', { title: 'CID | Accueil', projets: projets.docs, clubs: clubs, profs: profs.docs, host: req.hostname });
         })
     })
-   
+
 
 });
 
 router.get('/entreprise', function (req, res, next) {
-    res.render('accueil/entreprise', { title: 'CID | Accueil', logo: "< | >", host: req.hostname });
+    res.render('accueil/entreprise', { title: 'CID | Accueil', host: req.hostname });
 });
+router.get('/projets/:id', function (req, res, next) {
+    let projet = {
+        selector: {
+            _id: {
+                "$eq": req.params.id
 
+            }
+        }
+    }
+    cid_projets.find(projet).then((projet) => {
+        console.log(projet)
+        res.render('accueil/projet_details', { title: 'CID | Accueil', projet: projet.docs[0], host: req.hostname });
+    })
+});
 
 module.exports = router;
