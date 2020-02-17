@@ -15,7 +15,13 @@ ScrollReveal().reveal('.descendre',{
     'distance': '70px',
     'origin': 'top'
 })
-
+ScrollReveal().reveal('.appar',{
+    'delay': 500,
+    'interval' : 500,
+    'duration': 800,
+    'distance': '70px',
+    'scale' : "0.4"
+})
 ScrollReveal().reveal('.monter',{
     'delay': 200,
     'interval' : 500,
