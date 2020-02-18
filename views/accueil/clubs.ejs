@@ -6,7 +6,7 @@
             class="col-12 mb-4 font-weight-bold text-secondary droite">
             <i class="text-info fa-2x">C</i>lubs</h3>
         <div class="row">
-            <div class="col-4 details pt-3 gauche">
+            <div class="col-lg-4 col-sm-12 details pt-3 gauche">
                 <p class="">
                     La Junior Entreprise de l'ESATIC est une association
                     d'étudiants qui travaillent dans le but de fournir au
@@ -16,7 +16,7 @@
                 </p>
             </div>
             <% clubs.forEach((c)=>{ %>
-            <div class="col-3 p-2 monte">
+            <div class="col-lg-4 col-sm-12 p-2 monte">
                 <%- include("../components/clubCard",{
                     id : c._id,
                     projet : c.projet,

@@ -17,7 +17,6 @@
         background-color: rgba(255, 255, 255, 0.932);
         background-blend-mode: screen;
     }
-
     .auteurs{
         border-radius: 10px;
         opacity: 0.7;
@@ -49,13 +48,13 @@
                     <img id="entreLogo" src="/images/<%= club.image %>"
                         alt="">
                     <h1 class="display-1 black-text font-weight-bold">
-                        <%= club.projet %></h1>
+                        <%= club.equipe %></h1>
                     <h6><%= club.details %></h6>
                 </div>
                 <div class="col-5 white p-5 ombre auteurs m-5 appar">
                     <div class="text-center mb-4">
                         <small class="lead">Équipe</small>
-                        <h3 class="font-weight-bold"><%= club.equipe %></h3>
+                        <h3 class="font-weight-bold"><%= club.projet %></h3>
                         <hr>
                     </div>
                     <% club.auteurs.forEach((a)=>{ %>
@@ -82,6 +81,4 @@
         <%- include ../script -%>
         <script src="/js/accueil.js"></script>
 </body>
-
-
 </html>
