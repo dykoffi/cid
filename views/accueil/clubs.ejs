@@ -1,25 +1,32 @@
-<div class="col-12 p-5 information" id="startup">
+<div class="col-12 p-5 information" id="club">
     <i class="mdi-communication-business fa-10x"
-    style="font-size: 500px; transform: rotate(45deg); opacity: 0.1; position: absolute; top: -8.5cm; left: -6cm;"></i>
+        style="font-size: 500px; transform: rotate(45deg); opacity: 0.1; position: absolute; top: -8.5cm; left: -6cm;"></i>
     <div class="row">
-        <h3 class="col-12 mb-4 font-weight-bold text-secondary droite text-right"> <i class="text-info fa-2x">C</i>lubs</h3>
+        <h3
+            class="col-12 mb-4 font-weight-bold text-secondary droite">
+            <i class="text-info fa-2x">C</i>lubs</h3>
         <div class="row">
-            <div class="col-lg-5 offset-lg-1 col-md-7 p-2 monte">
-                <%- include("../components/projetcard",{
-                    id : "kjn",
-                    projet : "Junior Entreprise",
-                    image : "work.jpeg",
-                    equipe : "Junior Entreprise de l'ESATIC",
-                    details : "Proposer des protopytes d'innovation aux entreprises",
-                    type : "Education"
-                }) -%>
-            </div>
-            <div class="col-lg-6 col-md-5 details pt-3 gauche">
-                <p class="text-right">
-                    La Junior Entreprise de l'ESATIC est une association d'étudiants qui travaillent dans le but de fournir au grandes structures une aide technologique par des prototypes de produits innovants. Elle fonctionne comme une entreprise avec un president, un secretaire et un trésorier. <br>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Nous joindre</a>
+            <div class="col-4 details pt-3 gauche">
+                <p class="">
+                    La Junior Entreprise de l'ESATIC est une association
+                    d'étudiants qui travaillent dans le but de fournir au
+                    grandes structures une aide technologique par des prototypes
+                    de produits innovants. Elle fonctionne comme une entreprise
+                    avec un president, un secretaire et un trésorier. <br>
                 </p>
             </div>
+            <% clubs.forEach((c)=>{ %>
+            <div class="col-3 p-2 monte">
+                <%- include("../components/clubCard",{
+                    id : c._id,
+                    projet : c.projet,
+                    image : c.image,
+                    equipe : c.equipe,
+                    details : c.details,
+                    type : c.type
+                }) -%>
+            </div>
+            <% }) %>
         </div>
     </div>
 </div>

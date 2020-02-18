@@ -110,7 +110,7 @@ h3{
         transform: rotateZ(360deg)
     }
 }
-.calendrier{
+#objectifs{
     background-color: rgba(255, 255, 255, 0.623);
     background-image: url("/images/arduinode2.jpeg");
     background-size: cover;
@@ -152,5 +152,14 @@ h3{
     background-image: url("/images/arduinode2.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-blend-mode: screen;
+}
+
+#entreprises{
+    background-color: rgba(255, 255, 255, 0.849) !important;
+    background-image: url("/images/entreprises.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(50%);
     background-blend-mode: screen;
 }

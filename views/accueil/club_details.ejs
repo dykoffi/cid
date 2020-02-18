@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CID | Accueil
+    </title>
+    <%- include ../head -%>
+    <link rel="stylesheet" href="/stylesheet/accueil.css">
+</head>
+<style>
+    .entete {
+        min-height: 100vh;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(255, 255, 255, 0.932);
+        background-blend-mode: screen;
+    }
+
+    .auteurs{
+        border-radius: 10px;
+        opacity: 0.7;
+    }
+
+    img#entreLogo {
+        height: 4cm;
+        width: 4cm;
+        border-radius: 50%;
+    }
+</style>
+
+<body class="white">
+    <div id="top"></div>
+    <div id="fond"
+        class="d-flex flex-column justify-content-center align-items-center fond">
+        <div class="bg-dark p-4 mb-4">
+            <img src="/images/logo/logoCidBlanc.png" alt="" class="rot">
+        </div>
+        <div>
+            <h5 class="mont">Chargement ...</h5>
+        </div>
+    </div>
+    <div class="col-12" id="page">
+        <div class="row">
+            <div class="col-12 entete d-flex justify-content-center align-items-center flex-column p-5"
+                style="background-image: url('/images/<%= club.image %>');">
+                <div class="col-5 text-center">
+                    <img id="entreLogo" src="/images/<%= club.image %>"
+                        alt="">
+                    <h1 class="display-1 black-text font-weight-bold">
+                        <%= club.projet %></h1>
+                    <h6><%= club.details %></h6>
+                </div>
+                <div class="col-5 white p-5 ombre auteurs m-5 appar">
+                    <div class="text-center mb-4">
+                        <small class="lead">Équipe</small>
+                        <h3 class="font-weight-bold"><%= club.equipe %></h3>
+                        <hr>
+                    </div>
+                    <% club.auteurs.forEach((a)=>{ %>
+                    <div class="row">
+                        <i class="mdi-social-person col-2 fa-4x grey-text"
+                            aria-hidden="true"></i>
+                        <div class="col-10">
+                            <h5 class=""><%= a.nom %></h5>
+                            <small class="red-text"
+                                href="email:<%= a.mail %>"><%= a.mail %></small><br>
+                            <small class="blue-text"
+                                href="tel:<%= a.tel %>"><%= a.tel %></small>
+                        </div>
+                    </div>
+                    <% }) %>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <%- include footer -%>
+        </div>
+        <%- include ../script -%>
+        <script src="/js/accueil.js"></script>
+</body>
+
+
+</html>
