@@ -6,7 +6,6 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "@cloudant/cloudant": "^4.2.3",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
@@ -14,10 +13,11 @@
     "express-session": "^1.16.1",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
-    "nodemon": "^2.0.2",
+    "pg": "^8.5.1",
+    "sequelize": "^6.3.5",
     "socket.io": "^2.2.0"
   },
-  "main": "app.js",
+  "main": "bin/www.js",
   "author": "Dy KOFFI",
   "license": "ISC",
   "description": ""

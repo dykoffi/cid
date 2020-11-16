@@ -2,11 +2,11 @@
     <i class="mdi-communication-business fa-10x"
         style="font-size: 500px; transform: rotate(45deg); opacity: 0.1; position: absolute; top: -8.5cm; left: -6cm;"></i>
     <div class="row">
-        <h3
-            class="col-12 mb-4 font-weight-bold text-secondary droite">
+        <h3 class="col-12 mb-4 font-weight-bold text-secondary droite">
             <i class="text-info fa-2x">C</i>lubs</h3>
-        <div class="row">
-            <div class="col-lg-4 col-sm-12 details pt-3 gauche">
+        <div class="col-12">
+            <div class="row">
+                <!-- <div class="col-lg-4 col-sm-12 details pt-3 gauche">
                 <p class="">
                     La Junior Entreprise de l'ESATIC est une association
                     d'étudiants qui travaillent dans le but de fournir au
@@ -14,19 +14,18 @@
                     de produits innovants. Elle fonctionne comme une entreprise
                     avec un president, un secretaire et un trésorier. <br>
                 </p>
-            </div>
-            <% clubs.forEach((c)=>{ %>
-            <div class="col-lg-4 col-sm-12 p-2 monte">
-                <%- include("../components/clubCard",{
-                    id : c._id,
-                    projet : c.projet,
-                    image : c.image,
-                    equipe : c.equipe,
-                    details : c.details,
+            </div> -->
+                <% clubs.forEach((c)=>{ %>
+                <div class="col-lg col-sm-12 p-2 monte">
+                    <%- include("../components/clubCard",{
+                    id : c.id,
+                    projet : c.nom,
+                    image : c.photo,
                     type : c.type
                 }) -%>
+                </div>
+                <% }) %>
             </div>
-            <% }) %>
         </div>
     </div>
 </div>

@@ -6,7 +6,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '9900');
+var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**
@@ -92,8 +92,5 @@ io.sockets.on("connection", function (socket, pseudo) {
         var infoPerso = ""
         con.query(demandes, [infoProjet])
         socket.broadcast.emit("demandes",infoProjet)
-
     })
-
-
 })

@@ -12,10 +12,10 @@
 }
 #baniere {
     background-color: rgba(0, 0, 0, 0.39) !important;
-    background-image: url("/images/arduinode1.jpeg");
+    background-image: url("/images/Cid.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 100vh;
     z-index: 4;
     background-blend-mode: multiply;
     filter: "";
@@ -39,9 +39,6 @@
 #logo{
     opacity: 0.8;
     height: 20vmin
-}
-
-#copyright{
 }
 
 p {

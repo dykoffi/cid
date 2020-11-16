@@ -1,5 +1,4 @@
 <div class="col-12 p-3" id="projets" style="overflow: hidden;">
-    
     <div class="row">
         <h3 class="col-12 mb-4 text-secondary font-weight-bold gauche"> <i
                 class="text-info fa-2x">P</i>rojets</h3>
@@ -19,7 +18,7 @@
                     <% projets.forEach(p=>{ %>
                     <div class="col-lg-3 col-md-6 appar">
                         <%- include("../components/projetcard",{
-                            projet : p.projet,
+                            projet : p.nom,
                             image : p.image,
                             equipe : p.equipe,
                             details : p.details,
